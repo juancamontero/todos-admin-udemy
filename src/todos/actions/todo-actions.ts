@@ -1,9 +1,9 @@
 'use server'
 
 // 'auto' | 'force-dynamic' | 'error' | 'force-static'
-export const dynamic = 'force-dynamic' // renderiza dinámico
-// false | 0 | number
-export const revalidate = 0 // se revalida dinámico
+// export const dynamic = 'force-dynamic' // renderiza dinámico
+// // false | 0 | number
+// export const revalidate = 0 // se revalida dinámico
 
 import { Todo } from '@prisma/client'
 import prisma from '@/lib/prisma'

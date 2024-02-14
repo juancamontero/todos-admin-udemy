@@ -56,3 +56,17 @@ export const deleteCompleted = async (): Promise<any> => {
 
   return count
 }
+
+
+export const getAllTodos = async (): Promise<Todo[]>  => {
+  const todos = await fetch(`/api/todos`, {
+    method: 'GET',
+    headers: {
+      'content-type': 'application/json',
+    },
+  }).then((res) => res.json())
+
+  console.log(todos)
+  return todos
+
+}
